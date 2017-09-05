@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bodor.com.clipboard.MainActivity">
+
+    <EditText
+        android:id="@+id/et_copy"
+    android:hint="Type in text to copy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_past"
+        android:layout_below="@+id/et_copy"
+        android:hint="text to past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_below="@+id/et_past"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:text="COPY"
+            android:background="@android:color/holo_red_light"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_past"
+            android:text="PAST"
+            android:background="@android:color/holo_green_light"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
